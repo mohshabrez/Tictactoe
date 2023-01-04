@@ -114,6 +114,21 @@ nav ul {
     transition: width 1s ease-in-out;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    font-family: 'Baloo Bhaina 2';
+}
+
+footer div{
+    display: flex;
+    padding: 5px;
+    
+
+}
+
 @media screen and (max-width: 950px)
 {
     .gameContainer{
