@@ -1,7 +1,7 @@
 
 
 // Instancing variables
-let turn = 'X';
+let turn = 'x';
 let audio = new Audio('music.mp3');
 let clickSound = new Audio('ting.mp3');
 let gameOver = new Audio('gameover.mp3');
@@ -10,7 +10,7 @@ let isgameover = false;
 
 //Code to change turn using ternary opertaor
 const changeTurn =() =>{
-    return turn === 'X' ? 'O':'X';
+    return turn === 'x' ? 'O':'x';
 }
 
 
