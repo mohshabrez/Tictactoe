@@ -7,6 +7,8 @@ let clickSound = new Audio('ting.mp3');
 let gameOver = new Audio('gameover.mp3');
 let isgameover = false;
 
+const mediaQueryCondition = window.matchMedia('(max-width: 950px)')
+
 
 //Code to change turn using ternary opertaor
 const changeTurn =() =>{
@@ -36,6 +38,9 @@ const checkWin = () =>{
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = '200px';
             document.querySelector('.line').style.transform = `translate(${e[3]}vw , ${e[4]}vw) rotate(${e[5]}deg)`
             document.querySelector('.line').style.width = '20vw';
+            if(mediaQueryCondition.matches){
+                document.querySelector('.line').style.width = '72vw';
+            }
         }
         
     })
